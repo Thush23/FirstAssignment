@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvinfo2"
+        android:layout_width="237dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorblue"
+        android:text="@string/hint_name2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="0.509"
+        tools:ignore="MissingConstraints" />
+    //WELCOME BANNER//
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/coloryell"
+        android:text="@string/hint_name1"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/etname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="MissingConstraints" />
+    //TEXTVIEW NAME//
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/colorblue"
+        android:text="Name:"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etname"
+        app:layout_constraintVertical_bias="1.0" />
+    //EDITTEXT NAME//
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorblue"
+        android:hint="Please Enter Your Name"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/tvage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+    //TEXTVIEW AGE//
+    <TextView
+        android:id="@+id/tvage"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/colorblue"
+        android:text="Age:"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etage"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+    //EDITTEXT AGE//
+
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorblue"
+        android:hint="Please Enter Your Age"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toTopOf="parent" />
+    //TEXTVIEW EMAIL//
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/colorblue"
+        android:text="Email:"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etemail"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+    //EDITTEXT EMAIL//
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorblue"
+        android:hint="Please Enter Your Email"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toTopOf="parent" />
+    //BTN SAVE//
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/coloryell"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="@+id/btnreset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnreset"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+    //BTN RESET//
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/coloryell"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/tvinfo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/tvemail"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="0.481"
+        tools:ignore="MissingConstraints" />
+    //WELCOME INFO//
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="297dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorblue"
+        android:text="@string/hint_info"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/etname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.506"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">First Assignment</string>
+    <string name="hint_name">Please Enter Your Name</string>
+    <string name="hint_name1">Welcome</string>
+    <string name="hint_name2">If correct please click Save, or Reset to Restart</string>
+    <string name="hint_info">Please fill in the following</string>
+    <string name="hint_number">Please Enter Your Age</string>
+    <string name="hint_email">Please Enter Your Email</string>
+
+</resources>
